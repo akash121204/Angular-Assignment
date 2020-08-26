@@ -16,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { StoreModule } from '@ngrx/store';
-import { ProductsService } from './services/products.service';
 import { reducer } from './store/reducers';
 import { AddProductComponent } from 'src/products/add-product/add-product.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -47,7 +46,7 @@ import { ReactiveFormsModule } from '@angular/forms';
       product: reducer
     })
   ],
-  providers: [ ProductsService ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
