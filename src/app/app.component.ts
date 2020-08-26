@@ -13,4 +13,8 @@ export class AppComponent {
   public routeToAdd(): void {
     this.router.navigate(['add-product']);
   }
+
+  public routeToProducts(): void {
+    this.router.navigate(['products']);
+  }
 }

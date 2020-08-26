@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span>{{ pageHeading }}</span>
+        <span class="heading" (click)="routeToProducts()">{{ pageHeading }}</span>
         <span class="spacer"></span>
         <mat-icon (click)="routeToAdd()" class="icon">add</mat-icon>
     </mat-toolbar-row>
