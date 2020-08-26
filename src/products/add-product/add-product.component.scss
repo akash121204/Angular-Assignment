@@ -1,0 +1,19 @@
+.container{
+    text-align: center
+}
+
+.form-container{
+    @media only screen and (max-width: 639px) {
+        width: 300px; 
+    }
+
+    @media only screen and (min-width: 640px) {
+        width: 500px; 
+    }
+    margin: 0px auto; 
+    margin-top: 32px; 
+}
+
+.form-field{
+    display: block
+}

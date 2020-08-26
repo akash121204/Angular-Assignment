@@ -1,0 +1,13 @@
+<section>
+  <mat-card>
+    <img class="product-image" [src]="product.image" />
+    <mat-card-header layout="row" layout-align="center center">
+      <mat-card-title>{{ product.name }} {{ product.id }}</mat-card-title>
+      <mat-card-subtitle>{{ product.brand }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="price">
+      <p>Price: {{ product.price | currency}}</p>
+      <p>{{ product.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</section>

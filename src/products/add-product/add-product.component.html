@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="form-container">
+    <h2>Add New Product</h2>
+    <form [formGroup]="addProductForm" (submit)="submit()">
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product ID</mat-label>
+        <input matInput formControlName="id" type="number">
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product Name</mat-label>
+        <input matInput formControlName="name">
+        <mat-error *ngIf="addProductForm.controls.name.touched && addProductForm.controls.name.invalid">
+          <span *ngIf="addProductForm.controls.name.errors.required">This field is mandatory.</span>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product Image (Please Enter Image Url)</mat-label>
+        <input matInput formControlName="image">
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product Description</mat-label>
+        <input matInput formControlName="description">
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product Brand</mat-label>
+        <input matInput formControlName="brand">
+      </mat-form-field>
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Product Price</mat-label>
+        <input matInput formControlName="price">
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

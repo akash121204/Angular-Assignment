@@ -1,0 +1,6 @@
+<div class="products">
+  <app-product-card *ngFor="let product of pagedData" [product]="product"></app-product-card>
+</div>
+<mat-paginator #paginator [length]="products?.length" [pageSize]="size" [pageIndex]="page"
+  [pageSizeOptions]="[5, 10, 15]" (page)="getPagedData($event)">
+</mat-paginator>
