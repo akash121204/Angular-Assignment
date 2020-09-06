@@ -19,6 +19,9 @@ import { StoreModule } from '@ngrx/store';
 import { reducer } from './store/reducers';
 import { AddProductComponent } from 'src/products/add-product/add-product.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ProductDetailsComponent } from '../products/product-details/product-details.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     BaseComponent,
     CardComponent,
-    AddProductComponent
+    AddProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +46,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
+    MatExpansionModule,
+    MatSliderModule,
     StoreModule.forRoot({
       product: reducer
     })

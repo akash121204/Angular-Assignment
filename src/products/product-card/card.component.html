@@ -1,13 +1,25 @@
 <section>
-  <mat-card>
-    <img class="product-image" [src]="product.image" />
-    <mat-card-header layout="row" layout-align="center center">
-      <mat-card-title>{{ product.name }} {{ product.id }}</mat-card-title>
-      <mat-card-subtitle>{{ product.brand }}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content class="price">
-      <p>Price: {{ product.price | currency}}</p>
-      <p>{{ product.description }}</p>
-    </mat-card-content>
-  </mat-card>
+  <a class="product-card">
+    <div (click)="goToProductDetails(product.id)">
+      <img class="product-image" src="assets/images/{{product.image}}.png" />
+      <div class="content">
+        <div class="left-content">
+          <p class="name">{{ product.name }}</p>
+          <p class="category">{{ product.category }}</p>
+          <mat-icon class="rating" *ngFor="let ratingId of ratingArr;index as i" [id]="'star_'+i">
+            {{showIcon(product.rating, i)}}
+          </mat-icon>
+        </div>
+        <div class="right-content">
+          <p class="price">{{ product.price | currency}}</p>
+          <mat-icon class="circle-icon" *ngFor="let color of product.colors;index as i" (click)="goToProductDetails(product.id, color)" [ngStyle]="{ 'color': color }">
+            circle
+          </mat-icon>
+          <p>
+            <mat-icon class="cart-icon">add_shopping_cart</mat-icon>
+          </p>
+        </div>
+      </div>
+    </div>
+  </a>
 </section>

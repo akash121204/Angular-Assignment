@@ -4,289 +4,267 @@ import { ADD_PRODUCT, DELETE_PRODUCT, Actions } from './actions';
 const initialState: Product[] = [
     {
         id: '1',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Coombes',
+        image: 'image1',
+        category: 'LOUNGE',
+        price: '2600',
+        rating: 3,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '2',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Keeve Set',
+        image: 'image2',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 2,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '3',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Nille',
+        image: 'image3',
+        category: 'ARMCHAIR',
+        price: '950',
+        rating: 5,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '4',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
+        name: 'Momo',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '890',
+        rating: 1,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '5',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 4,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '6',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Penemille',
+        image: 'image2',
+        category: 'CHAIR',
+        price: '120',
+        rating: 2,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.',
+        colors: ['darkgreen', 'darkred', 'black']
     },
     {
         id: '7',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Kappu',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '420',
+        rating: 5,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '8',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 1,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '9',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Coombes',
+        image: 'image1',
+        category: 'LOUNGE',
+        price: '2600',
+        colors: ['darkgreen', 'darkred', 'black'],
+        rating: 5,
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '10',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Keeve Set',
+        image: 'image2',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 2,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '11',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Nille',
+        image: 'image3',
+        category: 'ARMCHAIR',
+        price: '950',
+        rating: 4,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '12',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
-    }, {
+        name: 'Momo',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '890',
+        rating: 1,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
+    },
+    {
         id: '13',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 5,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '14',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Penemille',
+        image: 'image2',
+        category: 'CHAIR',
+        price: '120',
+        rating: 4,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '15',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Kappu',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '420',
+        rating: 2,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '16',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 4,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '17',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Coombes',
+        image: 'image1',
+        category: 'LOUNGE',
+        price: '2600',
+        rating: 1,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '18',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Keeve Set',
+        image: 'image2',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 2,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '19',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Nille',
+        image: 'image3',
+        category: 'ARMCHAIR',
+        price: '950',
+        rating: 3,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '20',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
+        name: 'Momo',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '890',
+        rating: 2,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '21',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 5,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '22',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
+        name: 'Penemille',
+        image: 'image2',
+        category: 'CHAIR',
+        price: '120',
+        rating: 4,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '23',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
+        name: 'Kappu',
+        image: 'image4',
+        category: 'SHELVES',
+        price: '420',
+        rating: 1,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     },
     {
         id: '24',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
-    },
-    {
-        id: '25',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
-    },
-    {
-        id: '26',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
-    },
-    {
-        id: '27',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
-    },
-    {
-        id: '28',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
-    }, {
-        id: '29',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
-    },
-    {
-        id: '30',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
-    },
-    {
-        id: '31',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
-    },
-    {
-        id: '32',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
-    },
-    {
-        id: '33',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '1299.99'
-    },
-    {
-        id: '34',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1594146935/client/catalog/devices/samsung/Galaxy_Note20_5G_MysticGreen_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Samsung',
-        price: '999.99'
-    },
-    {
-        id: '35',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1568158710/client/catalog/devices/apple/iPhone_11_Purple_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '699.99'
-    },
-    {
-        id: '36',
-        name: 'Product',
-        image: 'https://img.xfinitymobile.com/image/upload/v1586966457/client/catalog/devices/apple/iPhone_SE_white_PRI.png',
-        description: 'This Mobile Device is Great',
-        brand: 'Apple',
-        price: '399.99'
+        name: 'Keeve Set',
+        image: 'image3',
+        category: 'TABLES & CHAIRS',
+        price: '590',
+        rating: 3,
+        colors: ['darkgreen', 'darkred', 'black'],
+        // tslint:disable-next-line: max-line-length
+        description: 'Vass Shoes makes handcrafted mens shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.'
     }
 ];
 

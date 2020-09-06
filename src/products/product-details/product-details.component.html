@@ -1,0 +1,34 @@
+<section>
+    <div class="content">
+        <div class="left-content">
+            <img class="product-image" src="assets/images/{{product.image}}.png" />
+            <div class="small-image">
+                <img class="image" src="assets/images/{{product.image}}.png" />
+                <img class="image" src="assets/images/{{product.image}}.png" />
+                <img class="image" src="assets/images/{{product.image}}.png" />
+            </div>
+            </div>
+        <div class="separator">
+            <mat-icon class="arrow-right-icon">keyboard_arrow_right</mat-icon>
+        </div>
+        <div class="right-content">
+            <p class="category">{{ product.category }}</p>
+            <p class="name">{{ product.name }}</p>
+            <p class="description">Vass Shoes makes handcrafted men's shoes in the heart of Budapest.I made a concept product page for practice which in my opinion represents their qualities better than their current state.</p>
+            <div class="color">
+                <p class="heading">Color</p>
+                <mat-icon class="color-icon" *ngFor="let color of product.colors;index as i" [ngStyle]="{ 'color': color }">
+                    {{ selectedColor === color ? 'check_circle' : 'circle' }}
+                </mat-icon>
+            </div>
+            <div class="price">
+                <p class="heading">Price per unit</p>
+                <div class="price-value">
+                    <p class="currency">{{ product.price | currency}}</p> 
+                    <button mat-raised-button type="button">Buy Now</button>
+                    <mat-icon class="cart-icon">add_shopping_cart</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

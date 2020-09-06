@@ -1,0 +1,20 @@
+@mixin flex-with-center-items {
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-13 {
+    font-size: 13px;
+}
+
+@mixin font-11 {
+    font-size: 11px;
+}
+
+@mixin font-18 {
+    font-size: 18px;
+}
+
+@mixin font-24 {
+    font-size: 24px;
+}

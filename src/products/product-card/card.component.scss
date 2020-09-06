@@ -1,10 +1,13 @@
+@import '../../color';
+@import '../../mixins';
+
 section {
     @media only screen and (max-width: 639px) {
         margin: 60px;
     }
 
     @media only screen and (min-width: 640px) {
-        margin: 24px;
+        margin: 40px;
     }
 }
 
@@ -14,6 +17,43 @@ section {
 }
 
 .price {
+    @include font-13;
+    margin-bottom: 4px;
     font-weight: 500;
-    text-align: center;
+}
+
+.cart-icon {
+    padding-top: 4px;
+    font-size: 18px;
+    float: right;
+    padding-right: 8px;
+    @include font-24;
+}
+
+.product-card {
+    cursor: pointer;
+}
+
+.content {
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 4px;
+}
+
+.name {
+    font-weight: 500; 
+    margin-bottom: 4px;
+}
+
+.category {
+    @include font-11;
+    color: $light-sea-green;
+}
+
+.rating {
+    @include font-18;
+}
+
+.circle-icon {
+    font-size: 16px;
 }

@@ -49,7 +49,7 @@ export class AddProductComponent implements OnInit {
         name: this.addProductForm.controls.name.value,
         image: 'https://img.xfinitymobile.com/image/upload/v1594064755/client/catalog/devices/samsung/Galaxy_Note20_Ultra_5G_MysticBronze_PRI.png',
         description: this.addProductForm.controls.description.value,
-        brand: this.addProductForm.controls.brand.value,
+        category: this.addProductForm.controls.brand.value,
         price: this.addProductForm.controls.price.value
       })
     );

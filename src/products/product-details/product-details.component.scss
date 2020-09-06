@@ -1,0 +1,86 @@
+@import '../../color';
+@import '../../mixins';
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 160px;
+}
+
+.product-image {
+    width: 300px; 
+    height: 300px;
+}
+
+.small-image {
+    display: flex; 
+    justify-content: center;
+    .image {
+        width: 28px; 
+        padding: 24px;
+    }
+}
+
+.separator {
+    @include flex-with-center-items;
+}
+
+.arrow-right-icon {
+    font-size: 52px;
+    background: beige;
+    height: 52px;
+    width: 52px;
+}
+
+.category {
+    @include font-11;
+    color: $light-sea-green;
+    font-weight: 500; 
+    margin-bottom: 8px;
+}
+
+.name {
+    @include font-24;
+    font-weight: 500;
+}
+
+.description {
+    width: 304px;
+    line-height: 2;
+    font-size: 12px;
+}
+
+.heading {
+    @include font-11;
+    color: $light-sea-green;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.color-icon {
+    @include font-18;
+}
+
+.price {
+    padding-top: 16px;
+}
+
+.price-value {
+    @include flex-with-center-items;
+    justify-content: space-between;
+}
+
+.cart-icon {
+    color: $light-grey;
+}
+
+button {
+    background-color: $black;
+    color: $white;
+}
+
+.currency {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+}

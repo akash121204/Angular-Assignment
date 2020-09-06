@@ -1,8 +1,44 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <span class="heading" (click)="routeToProducts()">{{ pageHeading }}</span>
-        <span class="spacer"></span>
-        <mat-icon (click)="routeToAdd()" class="icon">add</mat-icon>
-    </mat-toolbar-row>
-</mat-toolbar>
-<router-outlet></router-outlet>
+<section>
+  <mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <div class="filters">
+        <p class="filter-heading">Filter By</p>
+        <div class="filter-item">
+          <span>Collection</span>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="filter-item">
+          <span>Color</span>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </div>
+        <div class="filter-item">
+          <span>Category</span>
+          <mat-icon>keyboard_arrow_down</mat-icon>
+        </div>
+        <p class="range">Price Range</p>
+        <mat-slider></mat-slider>
+      </div>
+    </mat-drawer>
+    <div class="toolbar">
+      <div class="left-items">
+        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+        <span class="heading" (click)="routeToProducts()">HOME</span>
+        <span class="heading" (click)="routeToProducts()">SHOP</span>
+        <span class="heading" (click)="routeToProducts()">MAGAZINE</span>
+      </div>
+      <div class="right-items">
+        <mat-icon class="search-icon" (click)="filterBySearch()">search</mat-icon>
+        <form class="search-form" [formGroup]="searchForm">
+          <mat-form-field class="full-width">
+            <input matInput formControlName="name">
+          </mat-form-field>
+        </form>
+        <mat-icon>add_shopping_cart</mat-icon>
+        <span class="heading">LOGIN</span>
+      </div>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</section>

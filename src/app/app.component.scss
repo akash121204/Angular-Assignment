@@ -1,12 +1,81 @@
-.icon {
-    padding: 0 14px;
-    cursor: pointer;
+@import '../color';
+@import '../mixins';
+
+section {
+  height: 100%;
+}
+
+.toolbar {
+  height: 56px;
+  @include flex-with-center-items;
+  justify-content: space-between;
+}
+
+.left-items {
+  padding-left: 40px;
+  @include flex-with-center-items;
+}
+
+.filter-item {
+  @include flex-with-center-items;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $light-grey; 
+  margin-bottom: 16px;
+}
+
+.right-items {
+  padding-right: 32px;
+  @include flex-with-center-items;
+}
+
+mat-icon {
+  cursor: pointer;
+  padding-right: 32px;
 }
 
 .heading {
-    cursor: pointer;
+  cursor: pointer;
+  padding-right: 40px;
+  font-weight: 500;
 }
 
-.spacer {
-    flex: 1 1 auto;
+.drawer-container {
+  height: 100%;
+  background-color: $white;
 }
+
+.sidenav {
+  width: 280px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.filters {
+  padding: 24px;
+}
+
+.filter-heading {
+  padding-bottom: 24px;
+}
+
+mat-slider {
+  height: 24px;
+  min-width: 220px;
+}
+
+.range {
+  padding-top: 16px;
+}
+
+.search-icon {
+  padding-right: 16px;
+}
+
+.search-form {
+  padding-right: 64px;
+}
+
+
